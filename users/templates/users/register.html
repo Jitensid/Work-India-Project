@@ -1,0 +1,26 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<html>
+<head>
+
+    <title>Registration Form</title>
+
+    <!-- <script src="{% static 'users/config.js' %}"></script> -->
+
+
+<form action = "#" method="POST" class="form-group ">
+{% csrf_token %}	
+{{ form|crispy}}
+
+<input  type="submit" value="REGISTER">
+</form>
+
+</div>
+  
+
+</body>
+
+
+
+</html>
